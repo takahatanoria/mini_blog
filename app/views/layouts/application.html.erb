@@ -19,6 +19,14 @@
         s.parentNode.insertBefore(wf, s);
       })();
     </script>
+   <!-- Compiled and minified CSS -->
+   <%# <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+   <!-- Compiled and minified JavaScript -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script> 
+   <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script> %>
   </head>
 
   <body>
@@ -27,11 +35,12 @@
         <h1 class="grid-6"><a href="/">miniapp</a></h1>
         <% if user_signed_in? %>
         <div class="user_nav grid-6">
-           <span><%= current_user.nickname %>
+           <span>
             <ul class="user__info">
               <li>
                 <a href="/users/<%= current_user.id %>">マイページ</a>
         　<%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
+                <%= current_user.nickname %>
               </li>
             </ul>
           </span>        

@@ -2,7 +2,7 @@
   <div class="content_post" style="background-image: url(<%= @blog.image %>);">
     <% if user_signed_in? && current_user.id == @blog.user_id %>
       <div class="more">
-        <span><%= image_tag 'arrow_top.png' %></span>
+        <span></span>
       <ul class="more_list">
         <li>
           <%= link_to '編集', "/blogs/#{@blog.id}/edit", method: :get %>
@@ -12,9 +12,10 @@
         </li>
       </ul>
     </div>
-    <% end %>
+    <% end %>  
     <%= simple_format(@blog.text) %>
     <span class="name">
+     
       <a href="/users/<%= @blog.user.id %>">
         <span>投稿者</span><%= @blog.user.nickname %>
       </a>
