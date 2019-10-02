@@ -126,6 +126,7 @@ header.header {
   left: 0;
   right: 0;
   z-index: 5;
+  clear: both;
   div.header__bar.row {
     h1.grid-6 {
       font-size: 20px;
@@ -211,7 +212,7 @@ div.contents.row {
     word-wrap: break-word;
     background-repeat: no-repeat;
     background-size: 25% 100px; 
-    background-position: left;
+    background-position: 3px;
     background-color: white;
     border-radius: 3px;
     box-shadow: 0 0 10px rgba($black,0.2);
