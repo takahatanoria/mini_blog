@@ -1,17 +1,9 @@
 @import "compass";
 
-/*
- * "ほのか明朝" licensed under the IPA Font License Agreement v1.0
- * http://fontfree.me/966（配布元のURL）
- * http://ipafont.ipa.go.jp/（IPAフォントのURL）
- * http://ipafont.ipa.go.jp/ipa_font_license_v1.html（IPAフォントライセンスv1.0のURL）
- */
-
 
  @font-face {
     font-family: 'ふんわりうさぎフォント';
     src: url('hunwariusagi.ttf') format('truetype');
-    // src: url('font_1_honokamin.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -55,7 +47,6 @@ line-height: 1.57;
   font-size: 16px;
   color: white;
   font-family: 'ふんわりうさぎフォント';
-  // font-family: 'Unica One', "Avenir", "游ゴシック", "YuGothic", "ヒラギノ角ゴ Pro W6", "HIragino Kaku Gothic Pro W6", "HIragino Kaku Gothic Pro", Osaka, Meiryo, "メイリオ", "ＭＳ Ｐゴシック", "MS P Gothic", sans-serif;
   margin: 0;
 }
 
@@ -134,27 +125,18 @@ header.header {
   right: 0;
   z-index: 5;
   div.header__bar.row {
-  //   position: relative;
     h1.grid-6 {
       font-size: 20px;
       line-height: 41px;
       float: left;
       a {
-        
-  //       display: block;
-      }
+          }
     }
     div.grid-6 {
       float: right;
       text-align: right;
       font-size: 13px;
       float: right;
-  //     a.post {
-  //       @extend .btn;
-  //       width: 120px;
-  //       display: inline-left;
-  //       margin-left: 10px;
-  //     }
     }
   }
   .user_nav {
@@ -165,45 +147,20 @@ header.header {
     float: right;
     span {
       top: 5px;
-      // display: block;
       float: right;
       margin-left: 10px;
-      // width: 200px;
       height: 50px;
       font-size: 13px;
-      // font-size: 1em;
-      // cursor: pointer;
-      // position: relative;
-      // &:after {
-      //   content: '▼';
-      //   font-size: .7em;
-      //   margin-left: -4px;
-      // }
       &:hover ul {
         color: $accent;
         display: block;
       }
     }
     ul {
-      
-      // display: block;
-    //   display: none;
-    //   position: absolute;
-    //   top: 46px;
-    //   right: 0;
-    //   border-left: 1px solid #d8d8d8;
-    //   border-right: 1px solid #d8d8d8;
-    //   box-shadow: 1px 2px 5px rgba(0,0,0,0.1);
       li {
-        
-    //     background-color: #64b5f6;
-        a {
+       a {
           word-wrap: break-word;
           margin: 10;
-          // display: block;
-    //       padding: 10px 20px;
-    //       text-align: left;
-    //       border-bottom: 1px solid #d8d8d8;
         }
       }
      }
@@ -212,8 +169,6 @@ header.header {
 .form {
   background: url(https://dl.dropboxusercontent.com/u/5840617/DeathtoStock_Wired3.jpg);
   background-size: cover;
-  // height: 200px;
-  // width: 90%;
   .contents {
     position: absolute;
     left: 0;
@@ -234,7 +189,6 @@ div.contents.row {
   h2 {
     @include boxBase(20px 0, 0);
     font-weight: normal;
-    // padding:20px;
     strong {
       font-weight: bold;
       padding-right: 5px;
@@ -251,14 +205,7 @@ div.contents.row {
     height: 250px;
     width: 100%;
     color: #1565c0;
-    // padding-top: 30px;
-    // padding-bottom: 200px;
-    // overflow: hidden;
-    // text-overflow: ellipsis;
-    // word-break: break-all;
-    // padding-right:50px;
     word-wrap: break-word;
-    // background-size: cover;
     background-repeat: no-repeat;
     background-size: 25% 100px; 
     background-position: left;
@@ -287,24 +234,16 @@ div.contents.row {
       z-index: 2;
       height: 100px;
       width: 80px;
-      // text-align: right;
       &:hover ul.more_list {
         display: block;
       }
       ul.more_list {
         position: absolute;
         text-align: left;
-        // height: 100px;
         width: 80px;
         right: 0;
         font-size: 10px;
         float: left;
-        // position: relative;
-        // background-color: #64b5f6;    ポイントで映る様にする
-        // border: 1px solid #ddd;
-        // display: none;
-        // box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
-        // border-radius: 3px;
         li {
           border-bottom: 1px solid #ddd;
           &:last-child {
@@ -313,10 +252,8 @@ div.contents.row {
           a {
             display: block;
             padding: 5px;
-            // &:hover {
               background-color: $accent;
               color: #1565c0;
-            // }
           }
          
        }
@@ -326,7 +263,6 @@ div.contents.row {
       @extend .serif;
       position: absolute;
       height: 80%;
-      // width: 800px;
       left: 150px;
       right: 100px;
       bottom: 30px;
@@ -335,8 +271,6 @@ div.contents.row {
       overflow: hidden;
       text-overflow: ellipsis;
       word-break: break-all;
-      // padding: 30;
-      // padding-top: 10%;
       font-size: 20px;
       z-index: 2;
       font-weight: bold;
@@ -348,8 +282,6 @@ div.contents.row {
       bottom: 30px;
       z-index: 2;
       font-size: 13px;
-      // height: 100px;
-      // width: 800px;
       a {
         display: block;
         color: #1565c0;
