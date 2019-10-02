@@ -98,6 +98,8 @@ a {
 
 h1,h2,h3,h4,h5,h6 {
   width: 100%;  
+  font-family: 'ふんわりうさぎフォント';
+
 }
 
 .title {
@@ -205,6 +207,7 @@ div.contents.row {
     height: 250px;
     width: 100%;
     color: #1565c0;
+    font-family: 'ふんわりうさぎフォント';
     word-wrap: break-word;
     background-repeat: no-repeat;
     background-size: 25% 100px; 
@@ -272,6 +275,7 @@ div.contents.row {
       text-overflow: ellipsis;
       word-break: break-all;
       font-size: 20px;
+      font-family: 'ふんわりうさぎフォント';
       z-index: 2;
       font-weight: bold;
       text-shadow: 0 0 2px #000, 0 0 1px #000, 0 0 1px #000;
