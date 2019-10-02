@@ -1,14 +1,13 @@
-
 <div class="contents row">
   <div class="container">
-  <%= form_tag('/blogs', method: :post) do %>
-    <h3>
-      記事を投稿する
-    </h3>
-     <input placeholder="Image URL" type="text" name="image" >
-    <textarea placeholder="text" name="text" cols="30" rows="10"></textarea>
-    <input type="submit" value="SENT">
-  <% end %>
- </div>
+<%= form_with(model: Blog.new, local: true) do |form| %>
+      <h3>
+        記事を投稿する
+      </h3>
+      <input placeholder="Image Url" type="text" name="image">
+      <textarea cols="30" name="text" placeholder="text" rows="10"></textarea>           
+      <input type="submit" value="SENT">
+    <% end %>
+  </div>
 </div>
 
